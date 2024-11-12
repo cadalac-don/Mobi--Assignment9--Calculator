@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936" />
+
+    <EditText
+        android:id="@+id/Input_N1"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Input_N2"
+        android:layout_width="179dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/Input_N1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Num_Answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:cursorVisible="false"
+        android:defaultFocusHighlightEnabled="false"
+        android:ems="10"
+        android:inputType="none"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/b_Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input_N1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/b_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Add"
+        app:layout_constraintTop_toBottomOf="@+id/Num_Answer"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/b_Subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Subtract"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/b_Add"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/b_Divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Divide"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/b_Subtract"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/b_Multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Multiply"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/b_Divide"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
